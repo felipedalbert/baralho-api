@@ -1,0 +1,141 @@
+body{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;         
+}
+
+header .info-parametros{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    background-color: #9fa6b2;
+    box-shadow: rgba(40, 33, 118, 0.786) 0px 15px 15px;
+}
+
+header .info-parametros h1{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: rgb(219, 227, 235);
+    letter-spacing: 3px;
+    text-shadow: 2.5px 2.5px 4px rgba(45, 55, 79, 0.44);
+}
+
+header .info-parametros .controls{
+    width: 335px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+}
+
+header .info-parametros .controls #gerar-baralho, #qtd-cartas, #tirar-cartas{
+    flex: 1 1 48%;
+}
+
+header .info-parametros .controls #gerar-baralho{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(88, 88, 97, 0.2) 0px 7px 29px 0px;
+    background-color: rgb(155, 177, 217);
+    color: rgb(83, 87, 101);
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out .2s;
+}
+
+header .info-parametros .controls #gerar-baralho:hover{
+    background-color: rgb(150, 169, 204);
+    color: rgb(78, 89, 102);
+}
+
+header .info-parametros .controls #qtd-cartas{
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(88, 88, 97, 0.2) 0px 7px 29px 0px;
+    appearance: none;
+    position: relative;
+    background-color: rgb(106, 107, 123);
+    color: rgb(223, 227, 234);
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out .2s;
+}
+
+header .info-parametros .controls #qtd-cartas:hover{
+    background-color: rgb(88, 89, 101);
+}
+
+header .info-parametros .controls #qtd-cartas:focus{
+    outline: none;
+}
+
+
+header .info-parametros .controls #tirar-cartas{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(88, 88, 97, 0.2) 0px 7px 29px 0px;
+    appearance: none;
+    position: relative;
+    background-color: rgb(66, 68, 91);
+    color: rgb(204, 213, 229);
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out .2s;
+}
+
+header .info-parametros .controls #tirar-cartas:hover{
+    background-color: rgb(57, 59, 81);
+}
+
+header .info-parametros .controls i{
+    font-size: 1rem;
+    color: #000;
+    position: absolute;
+    top: 16%;
+    right: 11.5px;
+    color: rgb(205, 205, 224);
+    cursor: pointer;
+    user-select: none;
+    pointer-events: none; 
+}
+
+header .info-parametros .info-legenda #cartas-restantes{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(72, 98, 143);
+    letter-spacing: 2px;
+    text-shadow: 1.5px 1.5px 1px rgba(253, 253, 253, 0.44);
+}
+
+.principal{
+    background-color: #babdc4;
+}
+
+.principal #imgs-container{
+    min-height: calc(100vh - 232.22px);
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+.principal #imgs-container .card-box{
+    width: 240px;
+    height: 330px;
+    background-color: #83838e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

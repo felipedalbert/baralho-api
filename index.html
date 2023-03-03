@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body id="corpo">
+    <header>
+        <div class="info-parametros">
+            <h1>Tira Cartas</h1>
+
+            <div class="controls">
+                <button id="gerar-baralho">Gerar novo baralho</button>
+                <select id="qtd-cartas">
+                    <option value="0" selected>Quantidade de <br> cartas</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>   
+                </select>
+                <button id="tirar-cartas">Tirar quantidade de carta selecionada</button>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            
+            <div class="info-legenda">
+                <p id="cartas-restantes">Cartas sobrando:</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal">
+        <div id="imgs-container">
+            
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/5d2396c788.js" crossorigin="anonymous"></script>
+    <script src="js/baralho.js"></script>
+</body>
+</html>
