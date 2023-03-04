@@ -11,6 +11,11 @@ btnGerarBaralho.addEventListener('click', ()=>{
 })
 
 tirarCartasBaralho.addEventListener('click', ()=>{
+    tirarCartasBaralho.disabled = true;
+    setTimeout(() => {
+        tirarCartasBaralho.disabled = false;
+    }, 400);
+
     const selecaoDeQtd = document.getElementById('qtd-cartas')
 
     if (baralho && selecaoDeQtd.value != 0){
@@ -58,6 +63,7 @@ async function mostrarCartasTiradas(selectValue){
             `
         }
 
+        
         baralho.remaining = baralho.remaining - selectValue
         cartasRestantes.innerHTML = `Cartas sobrando: ${baralho.remaining}`
     }
