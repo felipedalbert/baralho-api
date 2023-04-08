@@ -55,6 +55,8 @@ async function mostrarCartasTiradas(selectValue){
         const deckAtualizado = await tirarCartas(baralho.deck_id, selectValue)
         const cartasTiradas = deckAtualizado.cards
 
+        console.log(deckAtualizado)
+
         for(let carta of cartasTiradas){
             containerCartas.innerHTML += `
                 <div class="card-box">
