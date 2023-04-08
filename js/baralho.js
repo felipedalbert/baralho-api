@@ -23,7 +23,7 @@ btnTirarCartasBaralho.addEventListener('click', ()=>{
     } else if(baralho){
         alert('Selecione a quantidade de cartas')
     }else{
-        alert('Você não pode tirar cartas sem gerar um bralho')
+        alert('Você não pode tirar cartas sem gerar um baralho')
     }
 
 })
