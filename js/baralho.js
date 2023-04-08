@@ -1,5 +1,5 @@
 const btnGerarBaralho = document.getElementById('gerar-baralho')
-const tirarCartasBaralho = document.getElementById('tirar-cartas')
+const btnTirarCartasBaralho = document.getElementById('tirar-cartas')
 const containerCartas = document.getElementById('imgs-container')
 const cartasRestantes = document.getElementById('cartas-restantes')
 let baralho
@@ -10,10 +10,10 @@ btnGerarBaralho.addEventListener('click', ()=>{
     alert('Novo baralho gerado')
 })
 
-tirarCartasBaralho.addEventListener('click', ()=>{
-    tirarCartasBaralho.disabled = true;
+btnTirarCartasBaralho.addEventListener('click', ()=>{
+    btnTirarCartasBaralho.disabled = true;
     setTimeout(() => {
-        tirarCartasBaralho.disabled = false;
+        btnTirarCartasBaralho.disabled = false;
     }, 400);
 
     const selecaoDeQtd = document.getElementById('qtd-cartas')
